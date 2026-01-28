@@ -1,0 +1,14 @@
+{
+  "name": "portfolio5220",
+  "version": "1.0.0",
+  "description": "Sai Lokesh Portfolio with contact form",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.0.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.0.0"
+  }
+}

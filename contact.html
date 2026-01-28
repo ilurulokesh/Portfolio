@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sai Lokesh</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html#about">About</a>
+    <a href="index.html#summary">Summary</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#certifications">Certifications</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="card contact-form-section" id="contact-form">
+    <h1 class="glow">Contact Me</h1>
+    <p class="subtitle">I'd love to hear from you! Fill out the form below and I'll get back to you as soon as possible.</p>
+
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile Number *</label>
+        <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number" pattern="[0-9+\-\s()]{10,15}">
+      </div>
+
+      <div class="form-group">
+        <label for="purpose">Purpose of Contacting *</label>
+        <select id="purpose" name="purpose" required>
+          <option value="">Select a purpose</option>
+          <option value="job-opportunity">Job Opportunity</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="consultation">Consultation</option>
+          <option value="general-inquiry">General Inquiry</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me more about how I can help you..."></textarea>
+      </div>
+
+      <button type="submit" class="btn submit-btn">Send Message</button>
+    </form>
+
+    <div id="formStatus" class="form-status"></div>
+  </section>
+
+  <!-- Back to Portfolio Link -->
+  <section class="card back-link">
+    <a href="index.html" class="btn">Back to Portfolio</a>
+  </section>
+
+  <script src="contact.js"></script>
+</body>
+</html>
